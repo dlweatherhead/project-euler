@@ -70,19 +70,19 @@ class PrimeTest(unittest.TestCase):
     def test_is_prime_true(self):
         self.assertEqual(is_prime(11), True)
 
-    def testListOfPrimes(self):
+    def test_list_of_primes(self):
         self.assertEqual(list_of_primes(10), [2, 3, 5, 7])
 
-    def testListOfPrimes_FalseCase(self):
+    def test_list_of_primes_false_case(self):
         self.assertNotEqual(list_of_primes(10), [2, 3, 4, 5, 7])
 
-    def testListOfPrimesUpTo(self):
+    def test_list_of_primes_up_to(self):
         self.assertEqual(list_of_primes_up_to(10), [2, 3, 5, 7])
 
-    def testPrimeFactors(self):
+    def test_prime_factors(self):
         self.assertEqual(prime_factors(60), [2, 2, 3, 5])
 
-    def testFindTheNthPrime(self):
+    def test_find_the_nth_prime(self):
         self.assertEquals(find_the_nth_prime(6), 13)
 
 
